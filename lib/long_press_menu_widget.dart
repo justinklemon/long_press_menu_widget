@@ -1,4 +1,4 @@
-library long_press_menu_widget;
+library;
 
 import 'package:flutter/material.dart';
 
@@ -104,7 +104,7 @@ class _LongPressMenuWidgetState<T> extends State<LongPressMenuWidget<T>> {
       radius: widget.radius,
       borderRadius: widget.borderRadius,
       customBorder: widget.customBorder,
-      enableFeedback: widget.enableFeedback,
+      enableFeedback: widget.enableFeedback ?? true,
       excludeFromSemantics: widget.excludeFromSemantics,
       focusNode: widget.focusNode,
       canRequestFocus: widget.canRequestFocus,
